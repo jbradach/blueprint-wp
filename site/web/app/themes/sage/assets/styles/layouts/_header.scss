@@ -1,0 +1,42 @@
+/*.admin-bar .navbar-fixed-top {
+    top: 32px;
+}*/
+
+.page-header {
+    padding-bottom: $line-height-computed / 2 - 1;
+    margin: inherit;
+
+    // margin: ($line-height-computed * 2) 0 $line-height-computed;
+    border-bottom: 1px solid $page-header-border-color;
+}
+
+.entry-meta span {
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.entry-meta span:last-child {
+    margin-right: 0;
+}
+
+/*
+.entry-meta span a {
+    color: #777;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+.entry-meta span a:hover {
+    text-decoration: underline;
+}
+
+.entry-meta span i {
+    color: #777;
+    font-size: 80%;
+}*/
+
+#banner-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #3F51B5;
+}

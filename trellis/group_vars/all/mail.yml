@@ -1,0 +1,6 @@
+# Documentation: https://roots.io/trellis/docs/mail/
+mail_smtp_server: smtp.mandrillapp.com:587
+mail_admin: stack@lemp.io
+mail_hostname: lemp.io
+mail_user: jb@rudeotter.com
+mail_password: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml

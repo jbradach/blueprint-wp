@@ -1,0 +1,6 @@
+apt_cache_valid_time: 86400
+default_timezone: America/Chicago
+hhvm: false
+www_root: /srv/www
+ip_whitelist:
+  - "{{ lookup('pipe', 'curl -4 https://api.ipify.org') }}"

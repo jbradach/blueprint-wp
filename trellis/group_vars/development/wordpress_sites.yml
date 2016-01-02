@@ -1,0 +1,28 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+wordpress_sites:
+  blueprint.dev:
+    site_hosts:
+      - blueprint.dev
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    site_install: true
+    site_title: blueprint.dev
+    admin_user: admin
+    # admin_password: (defined in group_vars/development/vault.yml)
+    admin_email: admin@blueprint.dev
+    permalink_structure: "/%postname%/"
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: true
+    cache:
+      enabled: false
+      duration: 30s
+    env:
+      disable_wp_cron: true
+      wp_home: https://blueprint.dev
+      wp_siteurl: https://blueprint.dev/wp
+      wp_env: development
+      db_name: example_dev
+      db_user: example_dbuser
+      # db_password: (defined in group_vars/development/vault.yml)
