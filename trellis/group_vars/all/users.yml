@@ -8,12 +8,16 @@ users:
       - "{{ web_group }}"
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/id_ed25519_common_2016-01-02.pub') }}"
+      - https://github.com/jbradach.keys
       # - https://github.com/username.keys
   - name: "{{ admin_user }}"
     groups:
       - sudo
     keys:
       - "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+      - "{{ lookup('file', '~/.ssh/id_ed25519_common_2016-01-02.pub') }}"
+      - https://github.com/jbradach.keys
       # - https://github.com/username.keys
 
 web_user: web

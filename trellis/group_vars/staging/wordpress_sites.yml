@@ -2,7 +2,7 @@
 wordpress_sites:
   blueprint.dev:
     site_hosts:
-      - emphatic.lemp.io
+      - leviathan.lemp.io
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:jbradach/blueprint-wp.git
     branch: master
@@ -10,16 +10,18 @@ wordpress_sites:
     permalink_structure: "/%postname%/"
     multisite:
       enabled: false
-      subdomains: false
+	      subdomains: false
     ssl:
       enabled: true
+      cert: /etc/letsencrypt/live/leviathan.lemp.io/fullchain.pem
+      key:  /etc/letsencrypt/live/leviathan.lemp.io/privkey.pem
     cache:
       enabled: false
       duration: 30s
     env:
       disable_wp_cron: true
-      wp_home: https://emphatic.lemp.io
-      wp_siteurl: https://emphatic.lemp.io/wp
+      wp_home: https://leviathan.lemp.io
+      wp_siteurl: https://leviathan.lemp.io/wp
       wp_env: staging
       db_name: blueprint_staging
       db_user: blueprint_dbuser
