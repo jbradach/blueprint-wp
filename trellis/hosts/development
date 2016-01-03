@@ -1,7 +1,7 @@
 # No edits are necessary
 
 [development]
-127.0.0.1
+192.168.50.5
 
 [web]
-127.0.0.1
+192.168.50.5
