@@ -39,9 +39,7 @@
     "johnpbloch/wordpress": "4.4",
     "roots/soil": "dev-master",
     "storm2k/sagextras": "dev-master",
-    "wpackagist-plugin/wordpress-importer": "^0.6.1",
-    "wpackagist-plugin/wordpress-seo": "^3.0",
-    "wpackagist-plugin/wordpress-social-login": "^2.3"
+    "wpackagist-plugin/wordpress-seo": "^3.0"
   },
   "extra": {
     "installer-paths": {
