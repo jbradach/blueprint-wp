@@ -10,11 +10,11 @@ wordpress_sites:
     permalink_structure: "/%postname%/"
     multisite:
       enabled: false
-	      subdomains: false
+      subdomains: false
     ssl:
       enabled: true
       cert: /etc/letsencrypt/live/leviathan.lemp.io/fullchain.pem
-      key:  /etc/letsencrypt/live/leviathan.lemp.io/privkey.pem
+      key: /etc/letsencrypt/live/leviathan.lemp.io/privkey.pem
     cache:
       enabled: false
       duration: 30s
